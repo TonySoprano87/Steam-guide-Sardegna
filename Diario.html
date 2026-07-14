@@ -4,10 +4,9 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Diario</title>
+<title>Diario Uscite - Steam Guide Sardegna</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -17,7 +16,9 @@
 
 <header>
 
-<h1>📖 Diario uscite</h1>
+<h1>📖 Diario Uscite</h1>
+
+<p>Il tuo logbook personale</p>
 
 </header>
 
@@ -25,25 +26,65 @@
 
 <div class="card">
 
-<h3>Prossimamente</h3>
+<h2>Nuova uscita</h2>
 
-<p>
+<p><strong>Data</strong></p>
+<input type="date" style="width:100%;padding:10px;">
 
-Qui registrerai tutte le uscite effettuate.
+<p><strong>Località</strong></p>
+<input type="text" placeholder="Es. Mare Morto" style="width:100%;padding:10px;">
 
-</p>
+<p><strong>Durata</strong></p>
+<input type="text" placeholder="Es. 2h 30m" style="width:100%;padding:10px;">
+
+<p><strong>Distanza</strong></p>
+<input type="text" placeholder="Es. 7 km" style="width:100%;padding:10px;">
+
+<p><strong>Note</strong></p>
+
+<textarea rows="6" style="width:100%;padding:10px;" placeholder="Com'è andata l'uscita?"></textarea>
+
+<br><br>
+
+<button class="button">
+
+Salva (versione futura)
+
+</button>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h2>Statistiche</h2>
+
+<p>🚣 Uscite: 0</p>
+
+<p>📏 Km percorsi: 0</p>
+
+<p>⏱ Ore pagaiate: 0</p>
+
+<p>🏆 Itinerario preferito: -</p>
+
+</div>
 
 <br>
 
 <a class="button" href="index.html">
 
-Home
+🏠 Home
 
 </a>
 
-</div>
-
 </main>
+
+<footer>
+
+Steam Guide Sardegna
+
+</footer>
 
 </body>
 
