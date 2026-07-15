@@ -1,0 +1,38 @@
+[
+  {
+    "id": "mare-morto",
+    "nome": "Mare Morto",
+    "zona": "Cabras (OR)",
+    "score": 95,
+    "livello": "Principiante",
+    "lat": 39.9386,
+    "lon": 8.4397,
+    "waze": "https://waze.com/ul?ll=39.9386,8.4397&navigate=yes",
+    "ventoMax": 10,
+    "ondaMax": 0.30
+  },
+  {
+    "id": "san-giovanni-sinis",
+    "nome": "San Giovanni di Sinis",
+    "zona": "Cabras (OR)",
+    "score": 88,
+    "livello": "Intermedio",
+    "lat": 39.8758,
+    "lon": 8.4405,
+    "waze": "https://waze.com/ul?ll=39.8758,8.4405&navigate=yes",
+    "ventoMax": 8,
+    "ondaMax": 0.30
+  },
+  {
+    "id": "lago-omodeo",
+    "nome": "Lago Omodeo",
+    "zona": "Oristano",
+    "score": 93,
+    "livello": "Principiante",
+    "lat": 40.1092,
+    "lon": 8.7874,
+    "waze": "https://waze.com/ul?ll=40.1092,8.7874&navigate=yes",
+    "ventoMax": 15,
+    "ondaMax": 0.50
+  }
+]
