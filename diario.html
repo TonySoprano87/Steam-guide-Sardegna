@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Diario Uscite</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📖 Diario Uscite</h1>
+
+<p>Registra le tue escursioni</p>
+
+</header>
+
+<main>
+
+<div class="card">
+
+<h2>Nuova uscita</h2>
+
+<input id="luogo" type="text" placeholder="Località">
+
+<input id="data" type="date">
+
+<input id="distanza" type="text" placeholder="Distanza (km)">
+
+<input id="durata" type="text" placeholder="Durata">
+
+<textarea id="note" rows="5" placeholder="Note"></textarea>
+
+<button class="button" onclick="salvaUscita()">
+
+💾 Salva uscita
+
+</button>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h2>Storico</h2>
+
+<div id="storico"></div>
+
+</div>
+
+<br>
+
+<a class="button" href="index.html">
+
+🏠 Home
+
+</a>
+
+</main>
+
+<footer>
+
+Steam Guide Sardegna
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
