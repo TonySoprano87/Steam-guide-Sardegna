@@ -2,37 +2,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const oggi = new Date();
 
-    const data = document.getElementById("today");
-
-    if (data) {
-
-        data.textContent = oggi.toLocaleDateString("it-IT", {
+    const today = document.getElementById("today");
+    if (today) {
+        today.textContent = oggi.toLocaleDateString("it-IT", {
             weekday: "long",
             day: "numeric",
             month: "long",
             year: "numeric"
         });
-
     }
 
+    // ===== DATI METEO (provvisori) =====
+
+    const meteo = {
+        vento: 8,
+        mare: 0.2,
+        temperatura: 27
+    };
+
+    // ===== HOME =====
+
+    const vento = document.getElementById("vento");
+    const mare = document.getElementById("mare");
+    const temperatura = document.getElementById("temperatura");
     const stato = document.getElementById("stato");
+
+    if (vento) vento.textContent = meteo.vento + " km/h";
+
+    if (mare) mare.textContent = meteo.mare + " m";
+
+    if (temperatura) temperatura.textContent = meteo.temperatura + " °C";
 
     if (stato) {
 
-        const vento = 8;
-        const onda = 0.20;
-
-        if (vento <= 10 && onda <= 0.30) {
+        if (meteo.vento <= 10 && meteo.mare <= 0.30) {
 
             stato.textContent = "🟢 USCITA CONSIGLIATA";
 
-        } else if (vento <= 15 && onda <= 0.50) {
+        } else if (meteo.vento <= 15 && meteo.mare <= 0.50) {
 
-            stato.textContent = "🟡 ATTENZIONE";
+            stato.textContent = "🟡 USCIRE CON PRUDENZA";
 
         } else {
 
-            stato.textContent = "🔴 MEGLIO RIMANDARE";
+            stato.textContent = "🔴 USCITA SCONSIGLIATA";
 
         }
 
