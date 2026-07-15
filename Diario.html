@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Diario Uscite - Steam Guide Sardegna</title>
+<title>Diario Uscite</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -18,7 +18,7 @@
 
 <h1>📖 Diario Uscite</h1>
 
-<p>Il tuo logbook personale</p>
+<p>Registra le tue escursioni</p>
 
 </header>
 
@@ -28,27 +28,19 @@
 
 <h2>Nuova uscita</h2>
 
-<p><strong>Data</strong></p>
-<input type="date" style="width:100%;padding:10px;">
+<input id="luogo" type="text" placeholder="Località">
 
-<p><strong>Località</strong></p>
-<input type="text" placeholder="Es. Mare Morto" style="width:100%;padding:10px;">
+<input id="data" type="date">
 
-<p><strong>Durata</strong></p>
-<input type="text" placeholder="Es. 2h 30m" style="width:100%;padding:10px;">
+<input id="distanza" type="text" placeholder="Distanza (km)">
 
-<p><strong>Distanza</strong></p>
-<input type="text" placeholder="Es. 7 km" style="width:100%;padding:10px;">
+<input id="durata" type="text" placeholder="Durata">
 
-<p><strong>Note</strong></p>
+<textarea id="note" rows="5" placeholder="Note"></textarea>
 
-<textarea rows="6" style="width:100%;padding:10px;" placeholder="Com'è andata l'uscita?"></textarea>
+<button class="button" onclick="salvaUscita()">
 
-<br><br>
-
-<button class="button">
-
-Salva (versione futura)
+💾 Salva uscita
 
 </button>
 
@@ -58,15 +50,9 @@ Salva (versione futura)
 
 <div class="card">
 
-<h2>Statistiche</h2>
+<h2>Storico</h2>
 
-<p>🚣 Uscite: 0</p>
-
-<p>📏 Km percorsi: 0</p>
-
-<p>⏱ Ore pagaiate: 0</p>
-
-<p>🏆 Itinerario preferito: -</p>
+<div id="storico"></div>
 
 </div>
 
@@ -85,6 +71,8 @@ Salva (versione futura)
 Steam Guide Sardegna
 
 </footer>
+
+<script src="app.js"></script>
 
 </body>
 
